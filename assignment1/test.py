@@ -2,6 +2,8 @@ from pprint import pprint # pretty print output formatting
 from question1 import (common_words, common_words_min, common_words_tuple,
     common_words_safe)
 # fill in the rest!
+from Article import (shows, saves)
+from Picture import (show)
 
 print "==testing question 1=="
 print "common_words... ",
@@ -22,3 +24,7 @@ pprint(common_words_tuple("words.txt", 5))
 print "common_words_safe... ",
 pprint(common_words_safe("words_fail.txt", 5))
 print
+
+a = Article("Breaking news", "blah blah blah content blah blah why don't i ever have time", "Da Harvard Crimson")
+a.shows()
+a.saves("hello.txt", "mockup.png")
